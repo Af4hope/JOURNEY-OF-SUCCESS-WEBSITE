@@ -1,0 +1,535 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Segoe UI", sans-serif;
+    background: linear-gradient(to right, #e0f7fa, #ffffff);
+    color: #333;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.navbar {
+    background: #fff;
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #0077b6;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: #0077b6;
+}
+
+.hero {
+    flex-grow: 1;
+    text-align: center;
+    padding: 5rem 2rem;
+}
+
+.hero h1 {
+    font-size: 2.5rem;
+    color: #004d40;
+    margin-bottom: 1rem;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+}
+
+.hero button {
+    background: #0077b6;
+    color: white;
+    padding: 0.8rem 1.5rem;
+    font-size: 1rem;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.hero button:hover {
+    background: #005f8a;
+}
+
+footer {
+    background: #fff;
+    text-align: center;
+    padding: 1rem;
+    font-size: 0.9rem;
+    color: #777;
+    border-top: 1px solid #eee;
+}
+
+.explore-button {
+    display: inline-block;
+    margin-top: 1rem;
+    padding: 0.75rem 1.5rem;
+    background-color: #0077b6;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+}
+
+.explore-button:hover {
+    background-color: #005f87;
+}
+
+
+
+.fade-in {
+    animation: fadeIn 1s ease-in;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+.explore-main {
+    padding: 3rem 2rem;
+    text-align: center;
+}
+
+.explore-main h1 {
+    font-size: 2.8rem;
+    margin-bottom: 0.5rem;
+    color: #004d40;
+}
+
+.explore-sub {
+    font-size: 1.1rem;
+    color: #666;
+    margin-bottom: 2.5rem;
+}
+
+.card-grid {
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.explore-card {
+    background: #ffffff;
+    border-radius: 15px;
+    padding: 2rem 1rem;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
+    text-decoration: none;
+    color: #000;
+    transition: transform 0.3s, box-shadow 0.3s;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.explore-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.1);
+}
+
+.explore-card img {
+    width: 60px;
+    height: 60px;
+    margin-bottom: 1rem;
+}
+
+.explore-card h2 {
+    font-size: 1.4rem;
+    color: #0077b6;
+    margin-bottom: 0.5rem;
+}
+
+.explore-card p {
+    font-size: 0.95rem;
+    color: #555;
+}
+.logo a {
+    text-decoration: none;
+    color: inherit;
+    font-weight: bold;
+}
+
+#or{
+    font-weight: bold;
+}
+#content {
+    text-align: justify;
+    
+    font-size: 18px;
+    color: crimson;
+    margin: 50px;
+    
+    
+}
+#content li{
+    border: 1px solid black;
+    list-style-type: none;
+}
+#before{
+    font-weight: bold;
+    
+}
+
+!!!des!!
+
+#content {
+    max-width: 1100px;
+    margin: 50px auto;
+    padding: 20px;
+    text-align: center;
+}
+
+#content h2 {
+    color: #8f3047;
+    font-size: 38px;
+    margin-bottom: 12px;
+}
+
+#content>p {
+    font-size: 18px;
+    margin-bottom: 35px;
+}
+
+#content ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 18px;
+}
+
+#content li {
+    background: rgba(255, 255, 255, 0.95);
+    border: 1px solid #d5d5d5;
+    border-radius: 6px;
+    padding: 25px;
+
+    min-height: 105px;
+
+    display: flex;
+    align-items: center;
+    text-align: left;
+
+    font-size: 18px;
+    line-height: 1.4;
+
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.12);
+
+    transition: 0.35s ease;
+}
+
+#content li::before {
+    content: "♡";
+    color: #8f3047;
+    font-size: 25px;
+    margin-right: 16px;
+    flex-shrink: 0;
+}
+
+#content li:hover {
+    transform: translateY(-6px);
+    border-color: #8f3047;
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.16);
+}
+
+@media (max-width: 850px) {
+    #content ul {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 550px) {
+    #content ul {
+        grid-template-columns: 1fr;
+    }
+
+    #content h2 {
+        font-size: 30px;
+    }
+}
+
+
+/* =========================
+   MEDITATION PAGE
+========================= */
+
+.meditation-page {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 50px 25px 80px;
+    text-align: center;
+}
+
+
+/* =========================
+   PAGE INTRO
+========================= */
+
+.meditation-page h1 {
+    color: #65745b;
+    font-size: 42px;
+    margin-bottom: 12px;
+    letter-spacing: 0.5px;
+}
+
+.meditation-intro {
+    max-width: 700px;
+    margin: 0 auto 45px;
+    font-size: 18px;
+    line-height: 1.7;
+    color: #555;
+}
+
+
+/* =========================
+   MEDITATION GRID
+========================= */
+
+.meditation-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 28px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+
+/* =========================
+   MEDITATION CARD
+========================= */
+
+.meditation-card {
+    background: #ffffff;
+    border: 1px solid #dfe4da;
+    border-radius: 16px;
+    overflow: hidden;
+    text-align: left;
+
+    box-shadow: 0 5px 18px rgba(0, 0, 0, 0.08);
+
+    transition:
+        transform 0.35s ease,
+        box-shadow 0.35s ease,
+        border-color 0.35s ease;
+}
+
+
+/* Hover */
+
+.meditation-card:hover {
+    transform: translateY(-8px);
+    border-color: #9aa98e;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.13);
+}
+
+
+/* =========================
+   MEDITATION IMAGE
+========================= */
+
+.meditation-card img {
+    width: 100%;
+    height: 230px;
+    object-fit: cover;
+    display: block;
+
+    transition: transform 0.5s ease;
+}
+
+.meditation-card:hover img {
+    transform: scale(1.04);
+}
+
+
+/* =========================
+   CARD CONTENT
+========================= */
+
+.meditation-content {
+    padding: 25px;
+}
+
+.meditation-content h2 {
+    color: #65745b;
+    font-size: 25px;
+    margin-bottom: 10px;
+}
+
+.meditation-content p {
+    color: #555;
+    font-size: 16px;
+    line-height: 1.7;
+    margin-bottom: 20px;
+}
+
+
+/* =========================
+   HOW TO PRACTICE
+========================= */
+
+.meditation-content h3 {
+    color: #7c6955;
+    font-size: 18px;
+    margin-bottom: 12px;
+}
+
+.meditation-content ol {
+    padding-left: 22px;
+    color: #555;
+    line-height: 1.8;
+}
+
+.meditation-content li {
+    padding-left: 5px;
+}
+
+
+/* =========================
+   DURATION
+========================= */
+
+.duration {
+    display: inline-block;
+    margin-top: 18px;
+    padding: 7px 14px;
+
+    background: #eef2ea;
+    color: #65745b;
+
+    border-radius: 20px;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+
+/* =========================
+   START BUTTON
+========================= */
+
+.meditation-button {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 11px 22px;
+
+    background: #65745b;
+    color: white;
+
+    text-decoration: none;
+    border-radius: 25px;
+
+    font-size: 15px;
+
+    transition: 0.3s ease;
+}
+
+.meditation-button:hover {
+    background: #4f5e47;
+    transform: translateY(-2px);
+}
+
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 750px) {
+
+    .meditation-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .meditation-page h1 {
+        font-size: 34px;
+    }
+
+    .meditation-intro {
+        font-size: 16px;
+    }
+}
+
+
+@media (max-width: 500px) {
+
+    .meditation-page {
+        padding: 35px 18px 60px;
+    }
+
+    .meditation-card img {
+        height: 200px;
+    }
+
+    .meditation-content {
+        padding: 20px;
+    }
+}
+
+.yo {
+    color: #7a152e;
+    font-family: "Segoe UI", sans-serif;
+}
+.description {
+    color: #080353;
+    font-size: 16px;
+    line-height: 1.7;
+    margin-bottom: 20px;
+    font-family: "bahnschrift", sans-serif;
+}
+.footer-text {
+    color: #c10000;
+    font-size: 14px;
+    line-height: 1.5;
+    
+    justify-content: center;
+}
+.footer-link {
+    color: #8404e0;
+    
+    hover {
+        text-decoration: underline;
+        color: #650265;
+        font-weight: bold;
+        
+        font-size: 14px;
+    }
+}
+.audio-player {
+    width: 100%;
+    margin-top: 20px;
+    
+}
